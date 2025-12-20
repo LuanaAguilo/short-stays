@@ -3,13 +3,13 @@ function Sidebar({ page, setPage }) {
     <aside className="sidebar">
       <ul>
         <li>
-          <button onClick={() => setPage("home")}>Home</button>
+          <button type="button" onClick={() => setPage("home")}>Home</button>
         </li>
         <li>
-          <button onClick={() => setPage("about")}>About</button>
+          <button type="button" onClick={() => setPage("about")}>About</button>
         </li>
         <li>
-          <button onClick={() => setPage("apartments")}>Apartments</button>
+          <button type="button" onClick={() => setPage("apartments")}>Apartments</button>
         </li>
       </ul>
     </aside>

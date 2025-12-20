@@ -4,9 +4,11 @@
 
 body {
   margin: 0;
-  background: #f6f7fb;
-  color: #111;
+  background-color: #f7f3ef;
+  color: #2b1e14;
 }
+
+/* --- APP CONTAINER --- */
 
 .app-container {
   min-height: 100vh;
@@ -14,64 +16,137 @@ body {
   flex-direction: column;
 }
 
-/* NAVBAR */
+/* --- NAVBAR --- */
+
 .navbar {
-  padding: 16px;
-  background: #222;
-  color: white;
+  width: 100%;
+  height: 64px;
+
+  background-color: #3a2a1f;
+  color: #f5efe9;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0 24px;
+  box-sizing: border-box;
 }
 
-.app-title {
+.navbar-title {
   margin: 0;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 700;
+  letter-spacing: 0.3px;
 }
 
-/* LAYOUT */
+/* --- MAIN CONTENT LAYOUT --- */
+
 .content {
   flex: 1;
   display: flex;
 }
 
-/* SIDEBAR */
+/* --- SIDEBAR --- */
+
 .sidebar {
-  width: 200px;
-  padding: 16px;
-  background: #f0f0f0;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+  width: 220px;
+  background-color: #efe7df;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
-.sidebar a {
-  text-decoration: none;
-  color: #333;
-  font-weight: 600;
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
-.sidebar a:hover {
-  text-decoration: underline;
+.sidebar li {
+  margin-bottom: 10px;
 }
 
-/* MAIN */
+.sidebar button {
+  width: 100%;
+  text-align: left;
+  padding: 10px 12px;
+
+  border: none;
+  background: transparent;
+  border-radius: 8px;
+
+  cursor: pointer;
+  font-size: 14px;
+  color: #3a2a1f;
+}
+
+.sidebar button:hover {
+  background-color: #e1d6cc;
+}
+
+/* --- MAIN PAGE AREA --- */
+
 .main {
   flex: 1;
-  padding: 16px;
+  padding: 32px;
+  background-color: #f7f3ef;
+  box-sizing: border-box;
 }
 
-/* FOOTER */
-.footer {
-  padding: 12px;
-  text-align: center;
-  background: #222;
+/* --- LIST STYLES --- */
+
+.main ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
-.footer a {
-  color: white;
+.main li {
+  padding: 14px;
+  border: 1px solid #d6c8bb;
+  border-radius: 12px;
+  margin-bottom: 12px;
+  background-color: #ffffff;
+
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* --- DELETE BUTTON --- */
+
+.main li button {
+  padding: 6px 12px;
+  border-radius: 8px;
+  border: 1px solid #c2b2a3;
+  background-color: #f2ebe5;
+  cursor: pointer;
+  color: #3a2a1f;
+}
+
+.main li button:hover {
+  background-color: #e6ddd6;
+}
+
+/* --- FOOTER --- */
+
+footer {
+  height: 52px;
+  background-color: #3a2a1f;
+  color: #f5efe9;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 14px;
+}
+
+footer a {
+  color: #f5efe9;
   text-decoration: none;
-  font-weight: 700;
 }
 
-.footer a:hover {
+footer a:hover {
   text-decoration: underline;
 }

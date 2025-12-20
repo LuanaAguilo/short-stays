@@ -1,7 +1,7 @@
 function Navbar() {
   return (
     <nav className="navbar">
-      <h1 className="app-title">Project React App</h1>
+      <h1 className="navbar-title">ShortStays</h1>
     </nav>
   );
 }
