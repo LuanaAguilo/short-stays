@@ -1,7 +1,9 @@
+import logo from "../assets/logo.png";
+
 function Navbar() {
   return (
     <nav className="navbar">
-      <h1 className="navbar-title">ShortStays</h1>
+      <img src={logo} alt="Short Stays" className="navbar-logo" />
     </nav>
   );
 }
