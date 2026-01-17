@@ -36,6 +36,11 @@ body {
   letter-spacing: 0.4px;
 }
 
+.navbar-logo {
+  height: 50px;
+  width: auto;
+}
+
 /* --- LAYOUT --- */
 
 .content {
